@@ -2850,7 +2850,7 @@ FVector ADonNavigationManager::FindRandomPointAroundOriginInNavWorld(AActor* Nav
 	for (int32 i = 0; i < MaxAttempts; i++)
 	{
 		float maxZAngularDispacement = FMath::Abs(MaxZAngularDispacement);
-		FRotator newDirection = FRotator(FMath::FRandRange(-maxZAngularDispacement, maxZAngularDispacement), FMath::FRandRange(0, 360), FMath::FRandRange(0, 360));
+		FRotator newDirection = FRotator(FMath::FRandRange(-maxZAngularDispacement, maxZAngularDispacement), FMath::FRandRange(0.0F, 360.0F), FMath::FRandRange(0.0F, 360.0F));
 		newDestination = Origin + newDirection.RotateVector(baseDisplacement);
 
 		if (MaxDesiredAltitude != -1.f)
