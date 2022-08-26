@@ -1,5 +1,5 @@
-# DoN AI Navigation Plugin for Unreal Engine 4
-This plugin provides a 3D dynamic pathfinding system for use with Unreal Engine 4 **(UE5 should work too now, if not open an Issue)**. This system was first developed for [DoN The Nature Game](http://www.drunkonnectar.com/) and the owner decided to make a plugin out of the navigation module as a gift to the Unreal community. He abandoned the project some years back and I started to collect various fixes and pull requests after I updated it to the current version.
+# DoN AI Navigation Plugin for Unreal Engine 5
+This plugin provides a 3D dynamic pathfinding system for use with Unreal Engine 4 & 5. This system was first developed for [DoN The Nature Game](http://www.drunkonnectar.com/) and the owner decided to make a plugin out of the navigation module as a gift to the Unreal community. He abandoned the project some years back and I started to collect various fixes and pull requests after I updated it to the current version.
 
 The plugin is primarly designed for Flying AIs based in dynamic or procedural worlds, which need to solve complex pathfinding tasks and other behavior not covered by Unreal's native AI navigation system or maps, which are too complex to be solved by simple ray-tracing/sweeping heuristics or a waypoint system.
 
