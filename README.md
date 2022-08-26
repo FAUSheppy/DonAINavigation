@@ -24,9 +24,9 @@ For a technical overview of the project, please visit this [link](http://www.dru
 
 # How to install / build:
 
- - 1:To get started make sure you have the Unreal Engine installed along with Visual Studio. Make sure that you also have Visual Studio set up for game development with C++.
- - 2:Create a project within the Unreal Engine editor, then save and close the program.
- - 3:Locate the directory of your newly created project. For example C:\Users\User\Unreal Engine\MyProject
- - 4:Create a “Plugins” folder and place the source code into the new directory. For example C:\Users\User\Unreal Engine\MyProject\Plugins
- - 5:Navigate back to the top level of your project and right-click on the .uproject file. Select Generate Visual Studio Project.
- - 6:Reopen the project with the Unreal Engine editor and Navigate to Edit>Plugins and enable (if already enabled don’t worry) your new plugin.
+ - 1: To get started make sure you have the Unreal Engine installed along with Visual Studio. Make sure that you also have Visual Studio set up for game development with C++.
+ - 2: Create a project within the Unreal Engine editor, then save and close the program.
+ - 3: Locate the directory of your newly created project. For example C:\Users\User\Unreal Engine\MyProject
+ - 4: Create a “Plugins” folder and place the source code into the new directory. For example C:\Users\User\Unreal Engine\MyProject\Plugins
+ - 5: Navigate back to the top level of your project and right-click on the .uproject file. Select Generate Visual Studio Project.
+ - 6: Reopen the project with the Unreal Engine editor and Navigate to Edit>Plugins and enable (if already enabled don’t worry) your new plugin.
