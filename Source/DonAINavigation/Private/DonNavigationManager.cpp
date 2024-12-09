@@ -15,7 +15,7 @@
 #include "DonNavigationManager.h"
 #include "DonAINavigationPrivatePCH.h"
 #include "Multithreading/DonNavigationWorker.h"
-
+#include "Engine/OverlapResult.h"
 #include <stdio.h>
 #include <limits>
 
@@ -559,7 +559,7 @@ static FString GetMeshAssetName(UPrimitiveComponent* Mesh)
 	if (staticMesh)
 		assetName = staticMesh->GetStaticMesh()->GetName();
 	else if (skeletalMesh)
-		assetName = skeletalMesh->SkeletalMesh->GetName();
+		assetName = skeletalMesh->GetSkinnedAsset()->GetName();
 	
 	return assetName;
 }
@@ -1286,9 +1286,10 @@ void ADonNavigationManager::Debug_DrawVoxelCollisionProfile(UPrimitiveComponent*
 		else
 		{
 			auto volume = VolumeAtSafe(voxelX, voxelY, voxelZ);
-			voxelLocation = volume->Location;
 			if (!volume)
 				continue;
+			voxelLocation = volume->Location;
+			
 		}
 
 		DrawDebugVoxel_Safe(GetWorld(), voxelLocation, NavVolumeExtent(), FColor::Red, bDrawPersistent, Duration, 0, DebugVoxelsLineThickness);
